@@ -42,27 +42,4 @@ lcd_data(str[i]);
 i++;
 }
 }
-void main()
-{
-DDRD=0xFF;
-lcd_init();
-while(1)
-{
-/*lcd_command(0x84);
-lcd_data('I');
-//lcd_command(0x85); if we use auto increment command in init function then there is no need to declare address for each character
-lcd_data('N');
-//lcd_command(0x86);
-lcd_data('D');
-//lcd_command(0x87);
-lcd_data('I');
-//lcd_command(0x88);
-lcd_data('A');
-lcd_data('.'); */
-lcd_command(0x84);
-lcd_string("INDIA");
-
-}
-
-}
 
