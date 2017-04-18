@@ -1,7 +1,3 @@
-#include<avr/io.h>
-#define F_CPU 16000000UL
-#include<util/delay.h>
-#define lcd PORTD
 void lcd_command(unsigned char cmd)
 {
 lcd=cmd & 0xF0;
